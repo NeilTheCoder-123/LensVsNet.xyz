@@ -1,0 +1,79 @@
+body{
+    background-image: url(https://img.freepik.com/free-vector/two-men-staring-each-other-as-enemies-conflict-two-worker_10045-384.jpg?size=626&ext=jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ef589d;
+}
+
+#lens{
+    filter: brightness(200%);
+}
+
+.Menu-list {
+    font-size: 10rem;
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateX(-10deg) rotateY(20deg);
+  }
+  
+  .Menu-list-item {
+    position: relative;
+    color: transparent;
+  }
+  .Menu-list-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: -10%;
+    right: -10%;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: -2px;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    z-index: 1;
+  }
+  
+  .Mask {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    top: 0;
+    height: 49%;
+    transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  }
+  .Mask span {
+    display: block;
+  }
+  
+  .Mask + .Mask {
+    top: 48.9%;
+    height: 51.1%;
+  }
+  .Mask + .Mask span {
+    transform: translateY(-49%);
+  }
+
+.img{
+    height: 400px;
+    width: 250px;
+    margin-top: 45px;
+    margin-left: -170px;
+    border-radius: 5rem;
+}
+
+.model{
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    width: 100rem;
+    height: 50rem;
+    border-radius: 10pt;
+    margin-bottom: 0.5in;
+    box-shadow: 1px 1px 38px black;
+}
